@@ -14,10 +14,10 @@ module.exports.onLoad = function () {
     const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
     const { join } = global.nodemodule["path"];
 
-  const path = join(__dirname, "cache", "left", "");
+  const path = join(__dirname, "cache", "left", "video");
   if (existsSync(path)) mkdirSync(path, { recursive: true });	
 
-  const path2 = join(__dirname, "cache", "left", "");
+  const path2 = join(__dirname, "cache", "left", "video");
     if (!existsSync(path2)) mkdirSync(path2, { recursive: true });
 
     return;
@@ -45,11 +45,11 @@ module.exports.run = async function({ api, event, Users, Threads }) {
     hours > 10 && hours <= 12 ? "__" :
     hours > 12 && hours <= 18 ? "__" : "__").replace(/\{time}/g, time);  
 
-  const randomPath = readdirSync(join(__dirname, "cache", "left", ""));
+  const randomPath = readdirSync(join(__dirname, "cache", "left", "video"));
 
   if (existsSync(pathGif)) formPush = { body: msg, attachment: createReadStream(pathGif) }
   else if (randomPath.length != 0) {
-    const pathRandom = join(__dirname, "cache", "left", "",`${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
+    const pathRandom = join(__dirname, "cache", "left", "video",`${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
     formPush = { body: msg, attachment: createReadStream(pathRandom) }
   }
   else formPush = { body: msg }
