@@ -3,7 +3,7 @@ const jimp = require("jimp");
 const fs = require("fs");
 
 module.exports.config = {
-  name: "fbcover2",
+  name: "cover",
   version: "1.0.0",
   permssion: 0,
   credits: "BADOL-KHAN",
@@ -21,7 +21,7 @@ const info = args.join(" ");
       id = Object.keys(event.mentions)[0] ||  event.senderID;
   }
 var nam = await Users.getNameUser(id); 
-if (!info) { return api.sendMessage(`Please enter in the format:\n${global.config.PREFIX}fbcover2 v6 name - title - address - email - phone - color (default = white)`, event.threadID); 
+if (!info) { return api.sendMessage(`Please enter in the format:\n${global.config.PREFIX}cover v6 name - title - address - email - phone - color (default = white)`, event.threadID); 
 } 
 else { 
   const msg = info.split("-"); 
