@@ -185,11 +185,11 @@ module.exports.config = {
 
    const text = `╰━─━──━─━≪✠≫━─━──━─━╯\n\n╭━─━──━─━≪✠≫━──━─━─━╮\n│𝐏𝐀𝐆𝐄   (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\n│𝗧𝘆𝗽𝗲: °${prefix}𝗛𝗲𝗹𝗽°\n│𝗧𝗼𝘁𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: ${arrayInfo.length}\n│𝐓𝐎𝐓𝐀𝐋 𝐔𝐒𝐄𝐑 :-  ${global.data.allUserID.length}\n╰━─━──━─━≪✠≫━──━─━─━╯\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n★𝙊𝙒𝙉𝙀𝙍-𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆-𝙇𝙄𝙉𝙆★👇\n\nhttps://www.facebook.com/RAJA.BABU.TERA.REAL.ABBU.OK.07\n\n★𝙊𝙒𝙉𝙀𝙍-𝙈𝙀𝙎𝙎𝙀𝙉𝙂𝘼𝙍𝙀-𝙇𝙄𝙉𝙆★👇\n\nm.me/100007070042228\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nᥬ🥶᭄  ᥬ😳᭄ ᥬ😝᭄  ᥬ🙄᭄ ᥬ😱᭄ ᥬ🤡᭄  ᥬ🥵᭄\n━❮●❯━━━━━❪💝❫━━━━━❮●❯━\n★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n╭•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╮\n\n 𝐌𝐎𝐇𝐀𝐌𝐌𝐀𝐃-𝐑𝐀𝐉𝐀-𝐁𝐀𝐁𝐔\n\n╰•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╯\n★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
       var link = [
-        "https://i.imgur.com/JZGkPnf.jpeg",
-        "https://i.imgur.com/JZGkPnf.jpeg",
-        "https://i.imgur.com/JZGkPnf.jpeg",
-        "https://i.imgur.com/JZGkPnf.jpeg",
-        "https://i.imgur.com/JZGkPnf.jpeg"
+        "https://i.imgur.com/CyqSvYF.jpeg",
+        "https://i.imgur.com/CyqSvYF.jpeg",
+        "https://i.imgur.com/CyqSvYF.jpeg",
+        "https://i.imgur.com/CyqSvYF.jpeg",
+        "https://i.imgur.com/CyqSvYF.jpeg"
       ]
       var callback = () => api.sendMessage({ body: siu + "\n\n" + msg + text, attachment: fs.createReadStream(__dirname + "/cache/leiamnashelp.jpg") }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashelp.jpg"), event.messageID);
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashelp.jpg")).on("close", () => callback());
@@ -198,7 +198,7 @@ module.exports.config = {
     const leiamname = getText("moduleInfo", command.config.name, command.config.description, `${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits);
 
     var link = [
-      "https://i.imgur.com/KPh76m1.jpeg",
+      "https://i.imgur.com/NOkIjhy.jpeg",
     ]
     var callback = () => api.sendMessage({ body: leiamname, attachment: fs.createReadStream(__dirname + "/cache/leiamnashelp.jpg") }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashelp.jpg"), event.messageID);
     return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashelp.jpg")).on("close", () => callback());
