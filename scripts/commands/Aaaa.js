@@ -2,7 +2,7 @@ const axios = require('axios');
 const jimp = require("jimp");
 const fs = require("fs");
 module.exports.config = {
-  name: "aa",
+  name: "a",
   version: "1.0.2",
   permission: 0,
   credits: "BADOL-KHAN",
