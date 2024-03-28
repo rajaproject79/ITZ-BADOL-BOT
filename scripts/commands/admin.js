@@ -1,13 +1,20 @@
+const axios = require('axios');
+const jimp = require("jimp");
+const fs = require("fs");
 module.exports.config = {
   name: "admin2",
-  version: "2.0.0",
+  version: "1.0.2",
   permission: 0,
   credits: "BADOL-KHAN",
-  description: "control admin lists",
+  description: "beginner's guide",
   prefix: true,
-  category: "admin",
-  usages: "admin [add/remove] [uid]",
+  category: "guide",
+  usages: "[Shows Commands]",
   cooldowns: 5,
+  envConfig: {
+    autoUnsend: true,
+    delayUnsend: 60
+  }
 };
  
 module.exports.languages = {
