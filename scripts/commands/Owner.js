@@ -22,15 +22,15 @@ const time = process.uptime(),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.imgur.com/AuIsA1l.jpeg",
+var link = ["https://i.imgur.com/hnX7Skc.jpeg",
         
-            "https://i.imgur.com/AuIsA1l.jpeg", 
+            "https://i.imgur.com/t1eDXqW.jpeg", 
             
-            "https://i.imgur.com/AuIsA1l.jpeg",
+            "https://i.imgur.com/hnX7Skc.jpeg",
 
-"https://i.imgur.com/AuIsA1l.jpeg",
+"https://i.imgur.com/t1eDXqW.jpeg",
             
-            "https://i.imgur.com/AuIsA1l.jpeg"];
+            "https://i.imgur.com/hnX7Skc.jpeg"];
   
 var callback = () => api.sendMessage({body:`╭•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╮\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸআসসালামু আলাইকুমꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿\n
 
@@ -55,6 +55,6 @@ var callback = () => api.sendMessage({body:`╭•┄┅══𝙈𝘾𝙎-𝘽�
 ╰┈►বেয়াদবি      :🍀হালকা♨️🌺
 ╰┈►ধন সম্পদ    :🌺জাতীয় ফকির⚠️🍀
 ╰┈►ভালোবাসা   :☘️কপাল ফুটা♨️🍁
-\n\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n╰┈►রোবট ওয়ার্নার কে কন্টাক করুন★\n\n╰┈►𝙈𝙀𝙎𝙎𝙀𝙉𝙂𝙀𝙍-𝙇𝙄𝙉𝙆★\n\n╰┈►m.mem100004504180813\n\n╰┈►𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆-𝙇𝙄𝙉𝙆★\n\nhttps://www.facebook.com/BADOL.CHOWDHURY.TERA.REAL.ABBU\n\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+\n\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n╰┈►রোবট এডমিন কে কন্টাক করুন★\n\n╰┈►𝙈𝙀𝙎𝙎𝙀𝙉𝙂𝙀𝙍-𝙇𝙄𝙉𝙆★\n\n╰┈►m.me/100007070042228\n\n╰┈►𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆-𝙇𝙄𝙉𝙆★\n\nhttps://www.facebook.com/RAJA.BABU.TERA.REAL.ABBU.OK.07\n\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n┏━━ [ 𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 ]━━➣\n┃🌻  𝐁𝐀𝐃𝐀𝐋 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘\n┃🌺 𝐁𝐨𝐭 𝐌𝐨𝐝𝐢𝐟𝐲 𝐑𝐚𝐣𝐚-𝐁𝐚𝐛𝐮 \n┗━━━━━━━━━━━━➢`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
