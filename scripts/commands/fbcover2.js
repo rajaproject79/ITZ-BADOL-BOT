@@ -32,7 +32,7 @@ module.exports.config = {
 
       api.sendMessage(`Processing your cover, please wait...`, event.threadID, (err, info) => setTimeout(() => { api.unsendMessage(info.messageID) }, 5000));
 
-      const img = `http://game2.jagoanvps.cloud:5059/fbcover/v6?name=${encodeURIComponent(name)}&uid=${id}&address=${encodeURIComponent(address)}&email=${encodeURIComponent(email)}&subname=${encodeURIComponent(subname)}&sdt=${encodeURIComponent(phone)}&color=${encodeURIComponent(color)}`;
+      const img = `http://nl2-3.deploy.sbs:2011/fbcover/v6?name=${encodeURIComponent(name)}&uid=${id}&address=${encodeURIComponent(address)}&email=${encodeURIComponent(email)}&subname=${encodeURIComponent(subname)}&sdt=${encodeURIComponent(phone)}&color=${encodeURIComponent(color)}`;
 
       try {
         const response = await axios.get(img, { responseType: 'arraybuffer' });
