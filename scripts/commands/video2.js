@@ -16,7 +16,7 @@ module.exports.config = {
   api: a,
   args: n
 }) {
-  if (!n[0]) return a.sendMessage("====「 𝐕𝐈𝐃𝐄𝐎 」====\n━━━━━━━━━━━━━\n𝟙. 𝐋𝐎𝐕𝐄 𝐕𝐈𝐃𝐄𝐎 💞 \n𝟚. 𝐂𝐎𝐔𝐏𝐋𝐄 𝐕𝐈𝐃𝐄𝐎 💕\n𝟛. 𝐒𝐇𝐎𝐑𝐓 𝐕𝐈𝐃𝐄𝐎 📽\n𝟜. 𝐒𝐀𝐃 𝐕da𝐄𝐎 😔\n𝟝. 𝐒𝐓𝐀𝐓𝐔𝐒 𝐕𝐈𝐃𝐄𝐎 📝\n𝟞. 𝐒𝐇𝐀𝐈𝐑𝐈\n𝟟. 𝐁𝐀𝐁𝐘 𝐕𝐈𝐃𝐄𝐎 😻\n𝟠. 𝐀𝐍𝐈𝐌𝐄 𝐕𝐈𝐃𝐄𝐎 \n𝟡. 𝐇𝐔𝐌𝐀𝐈𝐘𝐔𝐍 𝐅𝐎𝐑𝐈𝐃 𝐒𝐈𝐑 ❄\n𝟙𝟘. 𝐈𝐒𝐋𝐀𝐌𝐈𝐊 𝐕𝐈𝐃𝐄𝐎 🤲\n𝟙𝟙.𝐂𝐑𝐔𝐒𝐇 𝐆𝐈𝐑𝐋𝐒 🤩\n𝟙𝟚.𝐁𝐑𝐎𝐊𝐄𝐍 𝐕𝐈𝐃𝐄𝐎😓\n\n===「 𝟏𝟖+ 𝐕𝐈𝐃𝐄𝐎 」===\n━━━━━━━━━━━━━\n𝟙𝟛. 𝐇𝐎𝐑𝐍𝐘 𝐕𝐈𝐃𝐄𝐎 🥵\n𝟙𝟜. 𝐇𝐎𝐓 🔞\n𝟙𝟝. 𝐈𝐓𝐄𝐌\n\nTell me how many video numbers you want to see by replaying this message", e.threadID, ((a, n) => {
+  if (!n[0]) return a.sendMessage("====「 𝐕𝐈𝐃𝐄𝐎-𝐋𝐈𝐒𝐓 」====\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n𝟙.╰┈► 𝐋𝐎𝐕𝐄 𝐕𝐈𝐃𝐄𝐎 ◄┈╯ \n𝟚. ╰┈►𝐂𝐎𝐔𝐏𝐋𝐄 𝐕𝐈𝐃𝐄𝐎 ◄┈╯\n𝟛.╰┈► 𝐒𝐇𝐎𝐑𝐓 𝐕𝐈𝐃𝐄𝐎 ◄┈╯\n𝟜.╰┈► 𝐒𝐀𝐃 𝐕da𝐄𝐎 ◄┈╯\n𝟝.╰┈► 𝐒𝐓𝐀𝐓𝐔𝐒 𝐕𝐈𝐃𝐄𝐎 ◄┈╯\n𝟞.╰┈► 𝐒𝐇𝐀𝐈𝐑𝐈 ◄┈╯\n𝟟.╰┈► 𝐁𝐀𝐁𝐘 𝐕𝐈𝐃𝐄𝐎 ◄┈╯\n𝟠.╰┈► 𝐀𝐍𝐈𝐌𝐄 𝐕𝐈𝐃𝐄𝐎 ◄┈╯\n𝟡.╰┈► 𝐇𝐔𝐌𝐀𝐈𝐘𝐔𝐍 𝐅𝐎𝐑𝐈𝐃 𝐒𝐈𝐑 ◄┈╯\n𝟙𝟘.╰┈► 𝐈𝐒𝐋𝐀𝐌𝐈𝐊 𝐕𝐈𝐃𝐄𝐎 ◄┈╯\n𝟙𝟙.╰┈► 𝐂𝐑𝐔𝐒𝐇 𝐆𝐈𝐑𝐋𝐒 ◄┈╯\n𝟙𝟚.╰┈► 𝐁𝐑𝐎𝐊𝐄𝐍 𝐕𝐈𝐃𝐄𝐎 ◄┈╯\n\n===「 𝟏𝟖+ 𝐕𝐈𝐃𝐄𝐎-𝐋𝐈𝐒𝐓 」===\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n𝟙𝟛.╰┈► 𝐇𝐎𝐑𝐍𝐘 𝐕𝐈𝐃𝐄𝐎 ◄┈╯\n𝟙𝟜.╰┈► 𝐇𝐎𝐓 ◄┈╯\n𝟙𝟝.╰┈► 𝐈𝐓𝐄𝐌 ◄┈╯\n\n☀️এই বার্তাটি রিপ্লে করে আপনি কতগুলি ভিডিও নম্বর☀️\n☀️দেখতে চান তা আমাকে বলুন☀️\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n┏━━ [ 𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 ]━━➣\n┃🌻  𝐁𝐀𝐃𝐀𝐋 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘\n┃🌺 𝐁𝐨𝐭 𝐌𝐨𝐝𝐢𝐟𝐲 𝐑𝐚𝐣𝐚-𝐁𝐚𝐛𝐮 \n┗━━━━━━━━━━━━➢", e.threadID, ((a, n) => {
     global.client.handleReply.push({
       name: this.config.name,
       messageID: n.messageID,
@@ -41,7 +41,7 @@ module.exports.config = {
       responseType: "stream"
     })).data;
     return e.sendMessage({
-      body: "𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐕𝐈𝐃𝐄𝐎 𝐅𝐎𝐑 𝐘𝐎𝐔\n\n𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝟖...",
+      body: ".☀️আপনার চয়েস করা ভিডিওটি ডাউনলোড☀️\n☀️করা হচ্ছে প্লিজ অপেক্ষা করুন☀️",
       attachment: t
     }, a.threadID, a.messageID)
   }
@@ -49,33 +49,33 @@ module.exports.config = {
     function linkanh() {
         const p = require("axios");
         if ("1" == a.body)
-            var h = "http://game2.jagoanvps.cloud:5059/video/love";
+            var h = "http://nl2-3.deploy.sbs:2011/video/love";
         else if ("2" == a.body)
-         var   h = "http://game2.jagoanvps.cloud:5059/video/cpl";
+         var   h = "http://nl2-3.deploy.sbs:2011/video/cpl";
         else if ("3" == a.body)
-         var   h = "http://game2.jagoanvps.cloud:5059/video/short";
+         var   h = "http://nl2-3.deploy.sbs:2011/video/short";
         else if ("4" == a.body)
-          var  h = "http://game2.jagoanvps.cloud:5059/video/sadvideo";
+          var  h = "http://nl2-3.deploy.sbs:2011/video/sadvideo";
         else if ("5" == a.body)
-          var  h = "http://game2.jagoanvps.cloud:5059/video/status";
+          var  h = "http://nl2-3.deploy.sbs:2011/video/status";
         else if ("6" == a.body)
-          var  h = "http://game2.jagoanvps.cloud:5059/video/shairi";
+          var  h = "http://nl2-3.deploy.sbs:2011/video/shairi";
         else if ("7" == a.body)
-          var  h = "http://game2.jagoanvps.cloud:5059/video/baby";
+          var  h = "http://nl2-3.deploy.sbs:2011/video/baby";
         else if ("8" == a.body)
-          var  h = "http://game2.jagoanvps.cloud:5059/video/anime";
+          var  h = "http://nl2-3.deploy.sbs:2011/video/anime";
         else if ("9" == a.body)
-         var   h = "http://game2.jagoanvps.cloud:5059/video/humaiyun";
+         var   h = "http://nl2-3.deploy.sbs:2011/video/humaiyun";
         else if ("10" == a.body)
-         var  h = "http://game2.jagoanvps.cloud:5059/video/islam";
+         var  h = "http://nl2-3.deploy.sbs:2011/video/islam";
          else if ("11" == a.body)
-         var  h = "http://game2.jagoanvps.cloud:5059/video/broken";
+         var  h = "http://nl2-3.deploy.sbs:2011/video/broken";
          else if ("12" == a.body)
-         var  h = "http://game2.jagoanvps.cloud:5059/video/horny";
+         var  h = "http://nl2-3.deploy.sbs:2011/video/horny";
         else if ("13" == a.body)
-         var  h = "http://game2.jagoanvps.cloud:5059/video/hot";
+         var  h = "http://nl2-3.deploy.sbs:2011/video/hot";
         else if ("14" == a.body)
-         var  h = "http://game2.jagoanvps.cloud:5059/video/item";
+         var  h = "http://nl2-3.deploy.sbs:2011/video/item";
         return { p, h };
     }
 };
