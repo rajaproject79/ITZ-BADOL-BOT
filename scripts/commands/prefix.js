@@ -43,9 +43,8 @@ const { createReadStream, existsSync, mkdirSync, readdirSync } = global.nodemodu
     let callback = function () {
       return api.sendMessage(
         {
-          body: `╭•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╮\n\n==== ╰┈► 𝗠𝘆-𝗣𝗿𝗲𝗳𝗶𝘅-𝗖𝗺𝗱 ◄┈╯ ====\n\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n╰┈►𝗚𝗿𝗼𝘂𝗽-𝗡𝗮𝗺𝗲: ${threadName}\n\n┏━━ [ 𝐁𝐨𝐭 𝐏𝐫𝐞𝐟𝐢𝐱 ]━━➣\n┃🌻 𝗦𝘆𝘀𝘁𝗲𝗺 𝗽𝗿𝗲𝗳𝗶𝘅: [ ${global.config.PREFIX} ]\n┃🌺 𝗬𝗼𝘂𝗿 𝗯𝗼𝘅 𝗰𝗵𝗮𝘁 𝗽𝗿𝗲𝗳𝗶𝘅: [ ${global.config.PREFIX} ]\n┗━━━━━━━━━━━━➢\n\n╰┈►𝗕𝗼𝘁-𝗡𝗮𝗺𝗲: ${global.config.BOTNAME}\n\n╰┈►𝗕𝗼𝘁-𝗔𝗹𝗹-𝗖𝗺𝗱-𝗟𝗶𝘀𝘁 :${
-            client.commands.size
-          } \n\n╰┈►𝗢𝘄𝗻𝗲𝗿-𝗟𝗶𝗻𝗸: m.me/100004504180813\n\n╰┈►𝗙𝗯- https://www.facebook.com/RAJA.BABU.TERA.REAL.ABBU.OK.07\n\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n┏━━ [ 𝐀𝐣𝐤𝐞𝐫 𝐓𝐢𝐦𝐞 ]━━➣\n┃🌻 𝐑𝐚𝐣𝐚-𝐁𝐚𝐛𝐮\n┃🌺 𝐁𝐝 𝐓𝐢𝐦𝐞 [ ${thu} || ${times} ]\n┗━━━━━━━━━━━━➢\n\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸ𝐑𝐚𝐣𝐚-𝐁𝐚𝐛𝐮___//👿🤬😈ꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿\n\n╰•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╯`,
+          body: `╭•┄┅══𝐁𝐨𝐭-𝐏𝐫𝐞𝐟𝐢𝐱-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬══┅┄•╮\n\n┏━━━━━━ [ 𝐔𝐢𝐝-𝐔𝐬𝐞𝐫 ]━━➣\n┃➤𝐆𝐮𝐩-𝐍𝐚𝐦𝐞: ${threadName}\n┃➤𝐏𝐫𝐞𝐟𝐢𝐱: [ ${global.config.PREFIX} ]\n┃➤𝐈𝐛:𝐁𝐨𝐭-𝐍𝐚𝐦𝐞 ${global.config.BOTNAME}\n┃➤𝐓𝐢𝐦𝐞: [ ${thu} || ${times} ] \n┃➤𝐀𝐥𝐥-𝐂𝐦𝐝: ${
+            client.commands.size\n┗━━━━━━━━━━━━━━━━➢\n\n╰•┄┅══𝐁𝐨𝐭-𝐏𝐫𝐞𝐟𝐢𝐱-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬══┅┄•╯`,
           attachment: [fs.createReadStream(__dirname + `/photo.jpeg`)],
         },
         event.threadID,
