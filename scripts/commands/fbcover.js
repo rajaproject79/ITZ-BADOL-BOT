@@ -6,7 +6,7 @@ module.exports.config = {
   name: "fbcover",
   version: "1.0.0",
   permssion: 0,
-  credits: "BADOL-KHAN",
+  credits: "Mohammad Nayan",
   description: "",
   category: "fbcover",
   prefix: true,
@@ -16,7 +16,8 @@ module.exports.config = {
   module.exports.run = async function({ api, event, args, Users, Threads, Currencies}) {
     const uid = event.senderID;
     const info = args.join(" ");
-    var n = global.nayan_api
+    const apis = await axios.get('https://raw.githubusercontent.com/MR-NAYAN-404/NAYAN-BOT/main/api.json')
+  const n = apis.data.api
     var id = Object.keys(event.mentions)[0] || event.senderID;
   var nam = await Users.getNameUser(id);
   var ThreadInfo = await api.getThreadInfo(event.threadID);
@@ -33,7 +34,7 @@ module.exports.config = {
 
       api.sendMessage(`Processing your cover, please wait...`, event.threadID, (err, info) => setTimeout(() => { api.unsendMessage(info.messageID) }, 5000));
 
-      const img = `http://game2.jagoanvps.cloud:5059/fbcover/v1?name=${encodeURIComponent(name)}&uid=${id}&address=${encodeURIComponent(address)}&email=${encodeURIComponent(email)}&subname=${encodeURIComponent(subname)}&sdt=${encodeURIComponent(phone)}&color=${encodeURIComponent(color)}`;
+      const img = `${n}/fbcover/v1?name=${encodeURIComponent(name)}&uid=${id}&address=${encodeURIComponent(address)}&email=${encodeURIComponent(email)}&subname=${encodeURIComponent(subname)}&sdt=${encodeURIComponent(phone)}&color=${encodeURIComponent(color)}`;
 
       try {
         const response = await axios.get(img, { responseType: 'arraybuffer' });
