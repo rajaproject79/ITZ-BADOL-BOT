@@ -41,7 +41,7 @@ module.exports.config = {
       responseType: "stream"
     })).data;
     return e.sendMessage({
-      body: ".☀️আপনার চয়েস করা ভিডিওটি ডাউনলোড☀️\n☀️করা হচ্ছে প্লিজ অপেক্ষা করুন☀️",
+      body: ".☀️আপনার চয়েস করা ভিডিওটি ডাউনলোড করা হলো দেখে নিন☀️",
       attachment: t
     }, a.threadID, a.messageID)
   }
