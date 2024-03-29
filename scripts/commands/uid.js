@@ -16,7 +16,7 @@ const fs = global.nodemodule["fs-extra"];
     if(event.type == "message_reply") { 
       let name = await Users.getNameUser(event.messageReply.senderID) 
 	uid = event.messageReply.senderID
-	var callback = () =>   api.sendMessage({body:`=== [ 𝗨𝗜𝗗 𝗨𝗦𝗘𝗥 ] ====\n━━━━━━━━━━━━━━━━━━\n[ ▶️]➜ 𝗜𝗗: ${uid}\n[ ▶️]➜ 𝗜𝗕: m.me/${uid}\n[ ▶️]➜ 𝗟𝗶𝗻𝗸𝗳𝗯: https://www.facebook.com/profile.php?id=${uid}\n━━━━━━━━━━━━━━━━━━`, attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID,
+	var callback = () =>   api.sendMessage({body:`=== [ 𝐔𝐢𝐝-𝐔𝐬𝐞𝐫-𝐋𝐢𝐬𝐭 ] ====\n━━━━━━━━━━━━━━━━━━\n[ ▶️]➜ 𝐍𝐚𝐦𝐞: ${name}\n[ ▶️]➜ 𝐈𝐛: m.me/${uid}\n[ ▶️]➜ 𝐋𝐢𝐧𝐤𝐟𝐛: https://www.facebook.com/profile.php?id=${uid}\n━━━━━━━━━━━━━━━━━━`, attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID,
         () => fs.unlinkSync(__dirname + "/cache/1.png"),event.messageID); 
     return request(encodeURI(`https://graph.facebook.com/${uid}/picture?height=1500&width=1500&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(fs.createWriteStream(__dirname+'/cache/1.png')).on('close',
         () => callback()); 
