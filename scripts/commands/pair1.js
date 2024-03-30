@@ -17,7 +17,6 @@ module.exports.config = {
   }
 };
 
-
 module.exports.run = async function ({ args, Users, Threads, api, event, Currencies }) {
   const { loadImage, createCanvas } = require("canvas");
   const fs = global.nodemodule["fs-extra"];
@@ -103,7 +102,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
   fs.writeFileSync(pathImg, imageBuffer);
   fs.removeSync(pathAvt1);
   fs.removeSync(pathAvt2);
-  return api.sendMessage({ body: আসসালামু আলাইকুম, \n${name1}\n❤️❤️\n${name2}\nআই  ${tile}% লাব ইউ \n┏━━ [ 𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 ]━━➣\n┃🌻  𝐁𝐀𝐃𝐀𝐋 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘\n┃🌺 𝐁𝐨𝐭 𝐌𝐨𝐝𝐢𝐟𝐲 𝐑𝐚𝐣𝐚-𝐁𝐚𝐛𝐮 \n┗━━━━━━━━━━━━➢,
+  return api.sendMessage({ body: আসসালামু আলাইকুম, \n${name1}\n❤️❤️\n${name2}\nআই  ${tile}% লাব ইউ,
             mentions: [{
           tag: ${name2},
           id: id2
@@ -111,4 +110,4 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
       event.threadID,
       () => fs.unlinkSync(pathImg),
       event.messageID);
-                                              }
+  }
