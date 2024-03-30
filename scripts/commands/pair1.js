@@ -1,18 +1,22 @@
+const axios = require('axios');
+const jimp = require("jimp");
+const fs = require("fs");
 module.exports.config = {
   name: "pix",
-  version: "1.0.0",
-  hermssion: 0,
+  version: "1.0.2",
+  permission: 0,
+  credits: "BADOL-KHAN",
+  description: "beginner's guide",
   prefix: true,
-  credits: "Nayan",
-  description: "It's a compound :>",
-  category: "fun",
-  usages: "",
-  dependencies: {
-        "axios": "",
-        "fs-extra": ""
-  },
-  cooldowns: 15
-}
+  category: "guide",
+  usages: "[Shows Commands]",
+  cooldowns: 5,
+  envConfig: {
+    autoUnsend: true,
+    delayUnsend: 60
+  }
+};
+
 
 module.exports.run = async function ({ args, Users, Threads, api, event, Currencies }) {
   const { loadImage, createCanvas } = require("canvas");
