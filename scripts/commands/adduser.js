@@ -19,19 +19,19 @@ if(link.indexOf(".com/")!==-1) {
     const res = await axios.get(`https://golike.com.vn/func-api.php?user=${link}`);
     var uidUser = res.data.data.uid
     api.addUserToGroup(uidUser, threadID, (err) => {
-    if (participantIDs.includes(uidUser)) return api.sendMessage(`⚠️ মেম্বার কে গ্রুপে থাকতে হবে☑️`, threadID, messageID);
+    if (participantIDs.includes(uidUser)) return api.sendMessage(`⚠️ বস এই মুরগি চোরটা গ্রুপেই আছে ☑️`, threadID, messageID);
     if (err) return api.sendMessage(` ⚠️ নোলা মার্ক আইডি এড দেইনা❌`, threadID, messageID);
     else if (approvalMode && !adminIDs.some(item => item.id == api.getCurrentUserID())) return api.sendMessage(`⚠️ব্রাউজার তালিকায় সফল ব্যবহারকারীদের যোগ করুন❓`, threadID, messageID);
-    else return api.sendMessage(`⚠️এড তো করলাম Approval করবে কেডা তোমার নানা🥴 `, threadID, messageID);
+    else return api.sendMessage(`⚠️ বস আপনার আদেশে একজন মুরগি চোরকে গ্রুপে এড করা হলো🥴 `, threadID, messageID);
     });
     }
   else { 
     var uidUser = args[0] 
     api.addUserToGroup(uidUser, threadID, (err) => {
-    if (participantIDs.includes(uidUser)) return api.sendMessage(`⚠️ মেম্বার কে গ্রুপে থাকতে হবে☑️`, threadID, messageID);
+    if (participantIDs.includes(uidUser)) return api.sendMessage(`⚠️ বস এই মুরগি চোরটা গ্রুপেই আছে ☑️`, threadID, messageID);
     if (err) return api.sendMessage(`⚠️ নোলা মার্ক আইডি এড দেইনা❌`, threadID, messageID);
     else if (approvalMode && !adminIDs.some(item => item.id == api.getCurrentUserID())) return api.sendMessage(`⚠️ব্রাউজার তালিকায় সফল ব্যবহারকারীদের যোগ করুন❓`, threadID, messageID);
-    else return api.sendMessage(`⚠️এড তো করলাম Approval করবে কেডা তোমার নানা🥴 `, threadID, messageID);
+    else return api.sendMessage(`⚠️বস আপনার আদেশে একজন মুরগি চোরকে গ্রুপে এড করা হলো🥴 `, threadID, messageID);
     });
   }
 }
