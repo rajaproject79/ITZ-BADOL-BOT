@@ -22,7 +22,7 @@ module.exports.config = {
   var nam = await Users.getNameUser(id);
   var ThreadInfo = await api.getThreadInfo(event.threadID);
     if (!info) {
-      return api.sendMessage("Please enter in the format:\nfbcover name - subname - address - email - phone nbr - color (default = no )", event.threadID);
+      return api.sendMessage("🤟অনুগ্রহ করে এইভাবে ট্রাই করুন 🤟👇:\nfbcover name - subname - address - email - phone nbr - color (default = no )", event.threadID);
     } else {
       const msg = info.split("-");
       const name = msg[0].trim();
@@ -32,7 +32,7 @@ module.exports.config = {
       const phone = msg[4].trim();
       const color = msg[5].trim();
 
-      api.sendMessage(`Processing your cover, please wait...`, event.threadID, (err, info) => setTimeout(() => { api.unsendMessage(info.messageID) }, 5000));
+      api.sendMessage(`🤟ওয়েট করুন আপনার কভার তৈরি করা হচ্ছে 🤟`, event.threadID, (err, info) => setTimeout(() => { api.unsendMessage(info.messageID) }, 5000));
 
       const img = `${n}/fbcover/v1?name=${encodeURIComponent(name)}&uid=${id}&address=${encodeURIComponent(address)}&email=${encodeURIComponent(email)}&subname=${encodeURIComponent(subname)}&sdt=${encodeURIComponent(phone)}&color=${encodeURIComponent(color)}`;
 
@@ -49,7 +49,7 @@ module.exports.config = {
         }, event.threadID, () => fs.unlinkSync(outputPath));
       } catch (error) {
         console.error(error);
-        api.sendMessage("An error occurred while generating the FB cover.", event.threadID);
+        api.sendMessage("💔সো সরি ব্রাদার কিছু একটা প্রবলেম হয়েছে 💔", event.threadID);
       }
     }
   };
