@@ -33,9 +33,9 @@ module.exports.config = {
   name: "song", 
   version: "1.0.0", 
   permission: 0,
-  credits: "Nayan",
+  credits: "BADOL-KHAN",
   description: "example",
-  prefix: true,
+  prefix: "noprefix",
   category: "Media", 
   usages: "user", 
   cooldowns: 5,
@@ -54,7 +54,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
         if (fs.statSync(path).size > 26214400) return api.sendMessage('The file cannot be sent because the capacity is greater than 25MB.', event.threadID, () => fs.unlinkSync(path), event.messageID);
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
-		body: `🎵 Title: ${data.title}\n🎶 Name Channel : ${data.author}\n⏱️ Time: ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n🥰 Likes: ${data.likes}\n⏱️Processing time: ${Math.floor((Date.now()- data.timestart)/1000)} second\n💿====DISME PROJECT====💿`,
+		body: `🎵 Title: ${data.title}\n🎶 Name Channel : ${data.author}\n⏱️ Time: ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n🥰 Likes: ${data.likes}\n⏱️Processing time: ${Math.floor((Date.now()- data.timestart)/1000)} second\n💿====M-C-S PROJECT====💿\n┏━━ [ 𝐁𝐎𝐓-𝐎𝐖𝐍𝐄𝐑 ]━━➣\n┃➤ [ 𝐈𝐓𝐙.𝐁𝐀𝐃𝐀𝐋-𝐕𝐀𝐈___//👿🤬😈 ]\n┃➤  𝐌𝐎𝐃𝐈𝐅𝐘 [ 𝐑𝐀𝐉𝐀-𝐁𝐀𝐁𝐔__//😈🤬 ]\n┗━━━━━━━━━━━━➢`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
             
@@ -83,7 +83,7 @@ module.exports.run = async function ({ api, event, args }) {
             var data = await downloadMusicFromYoutube(args.join(" "), path);
             if (fs.statSync(path).size > 26214400) return api.sendMessage('Unable to send files because the capacity is greater than 25MB .', event.threadID, () => fs.unlinkSync(path), event.messageID);
             return api.sendMessage({ 
-                body: `🎵 Title: ${data.title}\n🎶 Name Channel: ${data.author}\n⏱️ Time: ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n👍 Likes: ${data.likes}\n⏱️ Processing time: ${Math.floor((Date.now()- data.timestart)/1000)} second\n💿====DISME PROJECT====💿`,
+                body: `🎵 Title: ${data.title}\n🎶 Name Channel: ${data.author}\n⏱️ Time: ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n👍 Likes: ${data.likes}\n⏱️ Processing time: ${Math.floor((Date.now()- data.timestart)/1000)} second\n💿====M-C-S PROJECT====💿\n┏━━ [ 𝐁𝐎𝐓-𝐎𝐖𝐍𝐄𝐑 ]━━➣\n┃➤ [ 𝐈𝐓𝐙.𝐁𝐀𝐃𝐀𝐋-𝐕𝐀𝐈___//👿🤬😈 ]\n┃➤  𝐌𝐎𝐃𝐈𝐅𝐘 [ 𝐑𝐀𝐉𝐀-𝐁𝐀𝐁𝐔__//😈🤬 ]\n┗━━━━━━━━━━━━➢`,
                 attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
             event.messageID)
             
@@ -101,7 +101,7 @@ module.exports.run = async function ({ api, event, args }) {
               num = num+=1
               msg += (`${num} - ${value.title} (${value.length.simpleText})\n\n`);
             }
-            var body = `»🔎 There's ${link.length} the result coincides with your search keyword:\n\n${msg}» Reply(feedback) select one of the searches above `
+            var body = `আসসালামু আলাইকুম  আপনার ${link.length} গানের তালিকা দেওয়া হলো:\n\n${msg} তালিকা থেকে আপনার পছন্দের নাম্বারটি নির্বাচন করুন এবং রিপ্লাই দিন\n\n`
             return api.sendMessage({
               body: body
             }, event.threadID, (error, info) => global.client.handleReply.push({
